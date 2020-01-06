@@ -2,6 +2,8 @@ const Sequelize = require('sequelize');
 const db ={};
 const sequelize = new Sequelize('LIBRARY', 'root', '',{
     host: 'localhost',
+    user : 'root',
+    password : 'password',
     dialect: 'mysql',
     operatorsAliases: false,
 
@@ -12,6 +14,7 @@ const sequelize = new Sequelize('LIBRARY', 'root', '',{
     idle: 10000
     }
 });
+
 
 db.sequelize= sequelize;
 db.Sequelize =Sequelize;

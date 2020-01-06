@@ -1,10 +1,12 @@
 const Sequelize= require('sequelize');
-const db = require('database.js');
+const db = require('../database/database');
 
 module.exports= db.sequelize.define(
+    //connect to specific table
     'BOOKS',
     {
-        id:{
+        //get values from table
+        book_id:{
             type: Sequelize.INTEGER,
             primaryKey:true,
             autoIncriment:true
