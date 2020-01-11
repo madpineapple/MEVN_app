@@ -11,7 +11,9 @@ module.exports= db.sequelize.define(
             primaryKey:true,
             autoIncriment:true
         },
-        title: Sequelize.STRING
+        title: Sequelize.STRING,
+        author: Sequelize.STRING,
+        img: Sequelize.STRING,
     },
     {
         timestamps:false

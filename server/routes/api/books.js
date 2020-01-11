@@ -7,7 +7,7 @@ const Book= require('../../models/Book');
 //Get Books
 router.get('/', (req, res)=> {
     //query to find books in table Books
-    Book.findAll({raw:true}).then(books=>(res.send(books)))
+    Book.findAll({raw:true}).then(books=>(res.json(books)))
     .catch(err=>{res.send('error: '+ err)})
     
 });
