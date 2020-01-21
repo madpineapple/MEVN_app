@@ -15,6 +15,7 @@ module.exports= db.sequelize.define(
         author: Sequelize.STRING,
         img: Sequelize.STRING,
         price:Sequelize.INTEGER,
+        description:Sequelize.STRING,
     },
     {
         timestamps:false

@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const db ={};
+
 const sequelize = new Sequelize('LIBRARY', 'root', '',{
     host: 'localhost',
     user : 'root',
@@ -7,6 +8,7 @@ const sequelize = new Sequelize('LIBRARY', 'root', '',{
     dialect: 'mysql',
     operatorsAliases: false,
 
+    //connection settings
     pool: {
     max: 10,
     min: 0,

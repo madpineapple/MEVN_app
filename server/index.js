@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const morgan= require('morgan');
 const app = express();
 
 //Middleware
@@ -13,5 +13,6 @@ const books = require('./routes/api/books');
 app.use('/api/books', books);
 //PORT variable process.env.PORT if deployed to heroku, 5000 for local
 const port = process.env.PORT || 5000;
+
 
 app.listen(port, ()=> console.log(`server started on port ${port}`));
